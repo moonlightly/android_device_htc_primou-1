@@ -90,9 +90,6 @@ PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     device/htc/primou/prebuilt/usr/keylayout/synaptics-rmi-touchscreen.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
 
-PRODUCT_COPY_FILES += \
-    device/htc/primou/prebuilt/etc/vold.fstab:system/etc/vold.fstab
-
 # init.d files
 #PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
