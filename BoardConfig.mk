@@ -56,11 +56,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1232072704
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
-TARGET_KERNEL_CONFIG := cyanogen_primou_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/primou/prebuilt/root/kernel
+TARGET_KERNEL_SOURCE := kernel/htc/primou
+TARGET_KERNEL_CONFIG := ultimo_defconfig
 
 # This is needed so CWM will function properly
 
