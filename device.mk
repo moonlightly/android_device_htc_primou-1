@@ -35,6 +35,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/root/init.primou.rc:root/init.primou.rc \
     device/htc/primou/prebuilt/root/init.usb.rc:root/init.usb.rc \
+    device/htc/primou/prebuilt/root/init.rc:root/init.rc \
     device/htc/primou/prebuilt/root/ueventd.rc:root/ueventd.rc \
     device/htc/primou/prebuilt/root/ueventd.primou.rc:root/ueventd.primou.rc
 
