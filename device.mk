@@ -94,11 +94,11 @@ PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
 # init.d files
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/init.d/01swap:system/etc/init.d/01swap
 
 # patched zram scripts
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/bin/compcache:system/bin/compcache \
     device/htc/primou/prebuilt/bin/handle_compcache:system/bin/handle_compcache
 
@@ -107,15 +107,6 @@ PRODUCT_COPY_FILES += \
     device/htc/primou/prebuilt/etc/dbus.conf:system/etc/dbus.conf \
     device/htc/primou/prebuilt/etc/dbus-1/system-services/org.bluez.service:system/etc/dbus-1/system-services/org.bluez.service
 
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/primou/prebuilt/root/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
